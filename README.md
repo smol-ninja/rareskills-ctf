@@ -6,6 +6,6 @@ Make sure foundry is installed. [instructions](https://book.getfoundry.sh/gettin
 
 cd to the directory of the problem, then add your solution in the test where the comment says `// Put your solution here`. We've also set up attacking contracts for you. If the tests pass, you were successful. Run the tests with `forge test` (exception for problem 8 below).
 
-### 8PredictBlockhash:
+### PredictBlockhash:
 
 run it with "forge test --fork-url https://1rpc.io/eth -vvvv"

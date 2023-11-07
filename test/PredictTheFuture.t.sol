@@ -25,6 +25,7 @@ contract PredictTheFutureTest is Test {
         uint8 guess = 3;
         predictTheFuture.lockInGuess{value: 1 ether}(guess);
 
+        // keep checking until you hit the jackpot
         while (!predictTheFuture.isComplete()) {
             if (exploitContract.canSettle(guess)) {
                 predictTheFuture.settle();
