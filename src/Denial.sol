@@ -39,7 +39,6 @@ contract Denial {
  * 
  * Note that this has become possible because of limitation on how much gas transaction can use.
  */
-
 contract ExploitContract {
     Denial private dripWallet;
 

@@ -12,3 +12,15 @@ docs/
 
 # Dotenv file
 .env
+
+# puppet-v2-hardhat
+puppet-v2-hardhat/node_modules/
+puppet-v2-hardhat/build/
+puppet-v2-hardhat/contracts/player-contracts/*.sol
+puppet-v2-hardhat/*.solved.js
+puppet-v2-hardhat/*.solved.json
+puppet-v2-hardhat/cache/
+puppet-v2-hardhat/.openzeppelin
+puppet-v2-hardhat/.vscode
+puppet-v2-hardhat/artifacts/
+puppet-v2-hardhat/cache/
