@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/RetirementFund.sol";
+import "../../src/week-7-8/RetirementFund.sol";
 
 contract RetirementFundTest is Test {
     RetirementFund public retirementFund;

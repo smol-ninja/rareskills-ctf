@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
-import "../src/PredictTheFuture.sol";
+import "../../src/week-7-8/PredictTheFuture.sol";
 
 contract PredictTheFutureTest is Test {
     PredictTheFuture public predictTheFuture;

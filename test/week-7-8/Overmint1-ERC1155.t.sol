@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
-import { Overmint1_ERC1155, ExploitContract } from "../src/Overmint1-ERC1155.sol";
+import { Overmint1_ERC1155, ExploitContract } from "../../src/week-7-8/Overmint1-ERC1155.sol";
 
 contract Overmint1_ERC1155Test is Test {
     ExploitContract exploitContract;

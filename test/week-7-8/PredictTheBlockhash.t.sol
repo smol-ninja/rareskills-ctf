@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
 
-import "../src/PredictTheBlockhash.sol";
+import "../../src/week-7-8/PredictTheBlockhash.sol";
 
 contract PredictTheBlockhashTest is Test {
     PredictTheBlockhash public predictTheBlockhash;

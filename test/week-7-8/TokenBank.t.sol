@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/TokenBank.sol";
+import "../../src/week-7-8/TokenBank.sol";
 
 contract TankBankTest is Test {
     TokenBankChallenge public tokenBankChallenge;

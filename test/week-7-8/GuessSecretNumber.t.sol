@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
-import "../src/GuessSecretNumber.sol";
+import "../../src/week-7-8/GuessSecretNumber.sol";
 
 contract GuessSecretNumberTest is Test {
     ExploitContract exploitContract;

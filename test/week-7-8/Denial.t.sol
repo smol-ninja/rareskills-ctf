@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/Denial.sol";
+import "../../src/week-7-8/Denial.sol";
 
 contract DenialTest is Test {
     Denial public dripWallet;

@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
-import "../src/TokenWhale.sol";
+import "../../src/week-7-8/TokenWhale.sol";
 
 contract TokenWhaleTest is Test {
     TokenWhale public tokenWhale;

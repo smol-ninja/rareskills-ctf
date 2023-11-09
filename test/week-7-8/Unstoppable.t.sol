@@ -2,8 +2,8 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import { DamnValuableToken } from "../src/utilities/DamnValuableToken.sol";
-import { UnstoppableVault, ReceiverUnstoppable } from "../src/Unstoppable.sol";
+import { DamnValuableToken } from "../../src/utilities/DamnValuableToken.sol";
+import { UnstoppableVault, ReceiverUnstoppable } from "../../src/week-7-8/Unstoppable.sol";
 
 contract UnstoppableTest is Test {
     DamnValuableToken public token;

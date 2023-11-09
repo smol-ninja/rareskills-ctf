@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/SideEntranceLenderPool.sol";
+import "../../src/week-7-8/SideEntranceLenderPool.sol";
 
 contract SideEntranceLenderPoolTest is Test {
     SideEntranceLenderPool public pool;

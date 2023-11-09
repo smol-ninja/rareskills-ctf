@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import { NaughtCoin, ExploitContract } from "../src/NaughtCoin.sol";
+import { NaughtCoin, ExploitContract } from "../../src/week-7-8/NaughtCoin.sol";
 
 contract NaughtCoinTest is Test {
     NaughtCoin public naughtCoin;
