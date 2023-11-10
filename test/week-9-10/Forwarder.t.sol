@@ -17,7 +17,6 @@ contract ForwarderTest is Test {
         exploitContract = new ExploitContract();
     }
 
-    // Use the instance of tokenSale and exploitContract
     function testIncrement() public {
         // Put your solution here
         exploitContract.exploit(forwarder, address(wallet));

