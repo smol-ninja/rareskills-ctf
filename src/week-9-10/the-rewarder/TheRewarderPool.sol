@@ -6,6 +6,8 @@ import "solady/src/utils/SafeTransferLib.sol";
 import { RewardToken } from "./RewardToken.sol";
 import { AccountingToken } from "./AccountingToken.sol";
 
+import "forge-std/Test.sol";
+
 /**
  * @title TheRewarderPool
  * @author Damn Vulnerable DeFi (https://damnvulnerabledefi.xyz)
