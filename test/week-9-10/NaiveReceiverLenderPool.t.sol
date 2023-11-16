@@ -2,8 +2,8 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../../src/week-9-10/NaiveReceiverLenderPool.sol";
-import "../../src/week-9-10/NaiveFlashLoanReceiver.sol";
+import "../../src/week-9-10/naive-receiver/NaiveReceiverLenderPool.sol";
+import "../../src/week-9-10/naive-receiver/NaiveFlashLoanReceiver.sol";
 
 contract NaiveReceiverTest is Test {
     NaiveReceiverLenderPool public pool;
